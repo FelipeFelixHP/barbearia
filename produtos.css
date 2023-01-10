@@ -29,6 +29,7 @@ nav a {
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
+    text-shadow: 5px 5px 10px #000000;
 }
 
 nav a:hover{
@@ -94,4 +95,34 @@ footer{
     font-size: 15px;
     color: #ffffff;
     padding: 20px 0 0;
+}
+@media screen and (max-width: 480px) { 
+    main {
+        position:static;
+        width: 100%;
+    }
+    .caixa{
+        width: auto;
+    }
+    nav{
+        position:static;
+    }
+    h1 {
+        text-align: center;
+    }
+    .produtos, .teste{
+        width: 100%;
+        
+    }
+    li{
+        margin: 20px 10px 0px 0px;
+    }
+    h2{
+        font-size: 15px;
+    }
+
+    .produtos li:hover h2{
+        font-size: 24px;
+    }
+   
 }
