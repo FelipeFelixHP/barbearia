@@ -4,43 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato-Barbearia</title>
+    <title>ContatoTRENDY</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="contato.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 <body>
+    <body>
     <header>
         <div class="caixa">
+
             <h1><img src="logo.png" alt="Logo de barbearia Alura"></h1>
-            <nav >
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
+            <p>Seja Bem-Vindo, fique a vontade para realizar seu cadastro e fazer pedido!</p>
+          
         </div>
     </header>
     
     <main>
         <form action="https://api.sheetmonkey.io/form/f4mEG5aGKtLq8rENgGAGZN" method="post">
-            <label for="nomesobrenome">Nome e sobrenome:</label>
-            <input type="text" id="nomesobrenome" class="input-padrao" required>
 
-            <label for="email"> Email:</label>
-            <input type="email" id="email"  class="input-padrao" required placeholder="seuemail@seudominio.com">
 
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone"  class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+            <label for="nomesobrenome">Nome e sobrenome:
+            <input type="text" id="nomesobrenome" class="input-padrao" name="nomesobrenome" required>
+            </label>
 
-            <label for="mensagem">Mensagem</label>
-            <textarea cols="70" rows="5" id="mensagem"  class="input-padrao" required > </textarea>
+            <label for="email"> Email:
+            <input type="email" id="email"  class="input-padrao" name="Email" required placeholder="seuemail@seudominio.com">
+            </label>
+
+            <label for="telefone">Telefone:
+            <input type="tel" id="telefone"  class="input-padrao" name="Telefone" required placeholder="(XX) XXXXX-XXXX">
+            </label>
+
+            <label for="nomesobrenome">Cidade:
+            <input type="text" id="nomesobrenome" class="input-padrao" name="Cidade" required>
+            </label>
+
+            <label for="nomesobrenome">Bairro:
+            <input type="text" id="nomesobrenome" class="input-padrao" name="Bairro" required>
+            </label>
+
+            <label for="mensagem">Faça aqui seu pedido:
+            <textarea cols="70" rows="5" id="mensagem"  class="input-padrao" name="mensagem" > </textarea>
+            </label>
 
             <fieldset>
                 <legend>Como prefere o nosso contato ?</legend>
 
                 <label for="radio-email">
-                    <input type="radio" value="Email" id="radio-email" name="contato">Email:
+                    <input type="radio" value="Email" id="radio-email" name="contato">Email
                 </label>
                 
 
@@ -49,13 +60,34 @@
                 </label>
                 
 
-                <label for="radio-whatsapp" > <input type="radio" value="whatsapp" id="radio-whatsapp" name="contato" checked>WhatsApp 
+                <label for="radio-whatsapp" > 
+                    <input type="radio" value="whatsapp" id="radio-whatsapp" name="contato" checked>WhatsApp 
                 </label>
 
             </fieldset>
+            <br> 
+
+            <fieldset>
+                <legend>Forma de pagamento ? </legend>
+
+                <label for="radio-pix">
+                    <input type="radio" value="Email" id="radio-email" name="pix">PIX
+                </label>
                 
+
+                <label for="radio-dinheiro"> 
+                    <input type="radio" value="Telefone" id="radio-telefone" name="pix">Dinheiro
+                </label>
+                
+
+                <label for="radio-cartao" > 
+                    <input type="radio" value="whatsapp" id="radio-whatsapp" name="pix" checked>Cartão 
+                </label>
+
+            </fieldset>
+                <br>
                 <fieldset>
-                    <legend>Qual Horario você prefere ser atendido ?</legend>
+                    <legend>Qual Horario da tua entrega  ?</legend>
                     <select >
                         <option>Manhã</option>
                         <option>Tarde</option>
@@ -79,16 +111,16 @@
             </thead>
            <tbody>
                 <tr>
-                    <td>Segunda</td>
+                    <td>Sábado</td>
                     <td> 08h as 20h</td>
                 </tr>
                 <tr>
                     <td>Quarta</td>
-                    <td> 10h as 18h</td>
+                    <td> 18h as 20h</td>
                 </tr>
                 <tr>
                     <td>Sexta</td>
-                    <td> 12h as 17h</td>
+                    <td> 07h as 11h</td>
                 </tr>
 
                 
@@ -103,7 +135,7 @@
 
      <footer>
         <img src="logo-branco.png">
-        <p class="copyright">&copy;  Copyright Felix 2023</p>
+        <p class="copyright">&copy;  Por: Felipe Felix </p>
     </footer>
 
     
